@@ -10,6 +10,7 @@ int dutyCycle[] = {25,50,75};
 // name this arduino for the RasPi to ask for below
 String unitName = "driver";
 String endCommand = "stop";
+
 void setup() {
   // Set baud rate to match RasPi @ 9600
   Serial.begin(9600);
@@ -18,6 +19,7 @@ void setup() {
     pinMode(ledPin[index], OUTPUT);
   }
 }
+
 // Set pins to appropriate duty cycles, wait for prompt from rasPi to give report
 void loop() {
   // Turn on LEDs
@@ -41,10 +43,11 @@ void loop() {
           voltage = voltageFunc(i);
           voltageArray[j] = voltage;
         }
-        
+        // Send the pin number over serial to RasPi
         Serial.println(i);
+        // Send each voltage reading value independently (as floats)
         for (int i = 0; i < 30; i ++) {
-          Serial.print(voltageArray[i]);
+          Serial.print(voltageArray[i], 4);
         }
         Serial.println();
       }
@@ -63,6 +66,8 @@ void ledOn(int pinNum, int dutyCycle) {
   int runVal = dutyCycle * 255 / 100;
   analogWrite(pinNum,dutyCycle);
 }
+
+
 /*
   When called, takes pinNum for analog pin address 
   Returns voltage drop across resistor
@@ -74,6 +79,7 @@ float voltageFunc(int pinNum) {
         voltageRead = val * (5.0/1023.0);
         return voltageRead;
 }
+
 
 /*
  LEDs off, wait infinitely
