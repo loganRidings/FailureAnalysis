@@ -39,7 +39,7 @@ void loop() {
         for (int i = 0; i < 30; i ++) {
           Serial.print(voltageArray[i], 4);
         }
-        // Print newline after all data is read over serial send
+        // Print newline after data is read over serial send (for each pin read)
         Serial.println();
       }
   }
