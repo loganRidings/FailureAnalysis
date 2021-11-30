@@ -9,7 +9,9 @@ int analogPin[] = {A0,A1,A2,A3,A4};
 int dutyCycle[] = {25,50,75};
 // name this arduino for the RasPi to ask for below
 String unitName = "driver";
+// Send this from Pi to arduino to enter infinite loop
 String endCommand = "stop";
+
 
 void setup() {
   // Set baud rate to match RasPi @ 9600
