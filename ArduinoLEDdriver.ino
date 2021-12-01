@@ -1,12 +1,12 @@
 // Initialize vars
 //Digital Switching pins
-int ledPin[] = {9,10,11};
+int ledPin[] = {9,10};
 //resistor vals (Ohms)
 int resistors[] = {100,1000,10000};
 // Analog pins to read voltage over resistors
 int analogPin[] = {A0,A1,A2,A3,A4};
 // input levels for duty cycle as a percentage
-int dutyCycle[] = {25,50,75};
+int dutyCycle[] = {50,75};
 // name this arduino for the RasPi to ask for below
 String unitName = "driver";
 // Send this from Pi to arduino to enter infinite loop
@@ -17,7 +17,7 @@ void setup() {
   // Set baud rate to match RasPi @ 9600
   Serial.begin(9600);
   // initialize pinModes
-  for (int index = 0; index<3; index++) {
+  for (int index = 0; index<2; index++) {
     pinMode(ledPin[index], OUTPUT);
   }
 }
@@ -25,7 +25,7 @@ void setup() {
 // Set pins to appropriate duty cycles, wait for prompt from rasPi to give report
 void loop() {
   // Turn on LEDs
-  for (int index = 0; index < 3; index++){
+  for (int index = 0; index < 2; index++){
     ledOn(ledPin[index],dutyCycle[index]);
   }
   // wait for HIGH signal from RasPi
@@ -49,7 +49,7 @@ void loop() {
         Serial.println(i);
         // Send each voltage reading value independently (as floats)
         for (int i = 0; i < 30; i ++) {
-          Serial.print(voltageArray[i], 4);
+          Serial.print(String(voltageArray[i]));
         }
         Serial.println();
       }
