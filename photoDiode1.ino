@@ -2,7 +2,7 @@
 int sensorPin[] = {A0,A1,A2,A3,A4};
 int sensorVal[30] = {};
 // Name of arduino that RasPi "asks for"
-String unitName = "diodeOne";
+String unitName = "photoOne";
 String endCommand = "stop";
 
 void setup() {
@@ -30,10 +30,10 @@ void loop() {
         sensorVal[j] = analogRead(pin);
       }
       // Send the pin number over serial to RasPi
-      Serial.println(pin);
+      Serial.println(sensorPin[pin]);
       // Send each photodiode reading value independently (as ints)
       for (int j = 0; j < 30; j ++) {
-        Serial.print(sensorVal[j]);
+        Serial.print(String(sensorVal[j]));
       }
       Serial.println();
     }
