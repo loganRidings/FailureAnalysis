@@ -4,7 +4,7 @@ int ledPin[] = {9,10};
 //resistor vals (Ohms)
 int resistors[] = {100,1000,10000};
 // Analog pins to read voltage over resistors
-int analogPin[] = {A0,A1,A2,A3,A4};
+int analogPin = A0;
 // input levels for duty cycle as a percentage
 int dutyCycle[] = {50,75};
 // name this arduino for the RasPi to ask for below
@@ -36,22 +36,22 @@ void loop() {
 
   // Read analog pin for resistor value and send pin no. with voltage drop over resistor
   if (command == unitName) {
-    float voltage = 0;
-    float voltageArray[30] = {};
+    float current = 0;
+    float currentArray[30] = {};
       // Read pins 1-5
-      for (int i = 0; i < 5; i++) {
+      for (int i = 0; i < 1; i++) {
         // take 30 measurements on analog pin and add to voltageArray
         for (int j = 0; j < 30; j++) {
-          voltage = voltageFunc(i);
-          voltageArray[j] = voltage;
+          current = currentFunc();
+          currentArray[j] = current;
         }
         // Send the pin number over serial to RasPi
-        Serial.println(i);
+        Serial.println(String(i));
         // Send each voltage reading value independently (as floats)
         for (int i = 0; i < 30; i ++) {
-          Serial.print(String(voltageArray[i]));
+          Serial.print(String(currentArray[i]));
         }
-        Serial.println();
+        Serial.print('\n');
       }
   }
   if (command == endCommand) {
@@ -71,15 +71,14 @@ void ledOn(int pinNum, int dutyCycle) {
 
 
 /*
-  When called, takes pinNum for analog pin address 
-  Returns voltage drop across resistor
+  Returns current through 22 Ohm resistor
 */
-float voltageFunc(int pinNum) {
+float currentFunc() {
   int val = 0;
   float voltageRead = 0;
-  val = analogRead(pinNum);
+  val = analogRead(analogPin);
         voltageRead = val * (5.0/1023.0);
-        return voltageRead;
+        return voltageRead/22;
 }
 
 
