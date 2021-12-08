@@ -89,6 +89,7 @@ def main(filename="/home/pi/test/test.csv"):
         # Wrting to a csv file
         with open(filename, 'w',newline='') as csvfile:
             dataWriter = csv.writer(csvfile, delimiter = ',')
+            dataWriter.writerow(readColumns)
             for i in range(len(DATADICT["C0"])):
                 newRow = []
                 for key in DATADICT:
