@@ -20,6 +20,8 @@ void setup() {
   for (int index = 0; index<2; index++) {
     pinMode(ledPin[index], OUTPUT);
   }
+  // Test pin on arduino unit to check for working duty cycle - pin 13
+  pinMode(13, OUTPUT);
 }
 
 // Set pins to appropriate duty cycles, wait for prompt from rasPi to give report
@@ -28,6 +30,8 @@ void loop() {
   for (int index = 0; index < 2; index++){
     ledOn(ledPin[index],dutyCycle[index]);
   }
+  // Turn on test pin 13
+  analogWrite(13,200);
   // wait for HIGH signal from RasPi
   while (!Serial.available()){}
   
