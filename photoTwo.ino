@@ -24,7 +24,7 @@ void loop() {
   // Read analog pin for 
   if (command == unitName) {
     // 
-    for (int pin = 0; pin < 5; pin++) {
+    for (int pin = 0; pin < 1; pin++) {
       // take 30 measurements on analog pin and add to voltageArray
       for (int j = 0; j < 30; j++) {
         sensorVal[j] = analogRead(pin);
