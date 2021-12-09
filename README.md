@@ -1,4 +1,24 @@
-# FailureAnalysis
+# FailureAnalysis Project Description
+Group Project for PHYS 679: Semiconductor Device Processing with Instructor Dr. Fuding Lin.
+
+## Project Goal:
+The goal of this project is to build an automated LED stress testing experiement apparatus by interfacing Arduino Nano's and a Raspberry Pi.
+
+## Useful Links:
+
+A full introduction and description of the projet can be found <here>
+  kjsbfjsd.ytasyv
+
+A full parts list can be found here:
+  
+The Arduino code to do xyz is here:
+  
+The python script to run on the Pi is here:
+
+Some of the useful references we consulted while working on this project:
+
+
+
 All Arduino and RaspberryPi and php and SQL code here, pls
 
 Please comment code thoroughly and keep things organized as much as possible
