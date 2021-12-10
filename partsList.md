@@ -2,9 +2,9 @@
 
 A complete parts list for the Failure Analysis Project.
 
-#### Raspberry Pi:
-  
+#### Raspberry Pi: 
   Our equipment all came from a Canakit from Amazon.... including 
+  
   - Raspberry Pi 4
   - HDMI Cord
   - Power Cord
@@ -17,7 +17,7 @@ A complete parts list for the Failure Analysis Project.
     - USB to Micro-USB Cord
 
 
-#### Circuit Elements
+#### Circuit Elements:
     - 6 VCC 4300H5LC cadmium sulfide Green LEDs
     - 6 PDV-P8001 Photodioes: to measure the light from the LEDs
     - 3 NTE2397 n-MOSFET:  to act as swtiches between the arduinos and LEDs.
