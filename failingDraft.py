@@ -1,10 +1,6 @@
 # This is the first draft of our device automation code
 # The goal is to send commands over the serial pins of the raspberry pi, and recieve data back.
 
-##########################################################################
-#       Still need to DO: get the dataframe and csv reading going.       #
-##########################################################################
-
 # Imports:
 import serial # pyserial package that will do the heavy lifting of machine/serial commands
 import time # A way to time the updates of the different components
