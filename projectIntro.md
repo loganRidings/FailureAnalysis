@@ -1,5 +1,7 @@
 # Introduction: 
-	Light emitting diodes (LEDs) have found widespread use due to their low power consumption, low cost, and long lifetime. 
+	
+	
+  Light emitting diodes (LEDs) have found widespread use due to their low power consumption, low cost, and long lifetime. 
   They offer narrow band emission in a variety of colors and are consistently being improved. Because LEDs are ubiquitous in 
   virtually every industry, the importance of reliability cannot be understated. LEDs failure is often characterized by a gradual 
   decrease in luminous intensity over the lifetime of the bulb, although instantaneous failure occasionally occurs as well. LED 
@@ -22,7 +24,12 @@
   used 1kΩ pull-down resistors, a lower resistance value was used so that the detectors would be more sensitive to large drops in 
   luminous intensity. 
  
-Figure 1. Example circuit from experimental setup. Each digital output pulsed the LEDs at a different frequency (max 490 Hz). 
-The current was measured by the analogue input of the measurement Arduino. Resistors were used to control the amount of current 
-through each of the LEDs. 
-![image](https://user-images.githubusercontent.com/80741351/145651165-70e0a6cb-c7ef-4214-a8cf-5d8ad8984a2d.png)
+ 
+  
+  ![image](https://user-images.githubusercontent.com/80741351/145651455-48672073-2f07-4116-9152-9df46b7b193c.png)
+
+
+  #### Figure 1. 
+  Example circuit from experimental setup. Each digital output pulsed the LEDs at a different frequency (max 490 Hz). 
+  The current was measured by the analogue input of the measurement Arduino. Resistors were used to control the amount of current 
+  through each of the LEDs. 
