@@ -6,8 +6,7 @@ The goal of this project is to build an automated LED stress testing experiement
 
 ## Useful Links:
 
-A full introduction and description of the projet can be found <here>
-  kjsbfjsd.ytasyv
+A full introduction and description of the projet can be found here: [Intro](https://github.com/loganRidings/FailureAnalysis/blob/main/projectIntro.md)
 
 A full parts list can be found here: [Parts List](https://github.com/loganRidings/FailureAnalysis/blob/main/partsList.md#parts-list)
   
