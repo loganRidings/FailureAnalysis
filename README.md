@@ -12,7 +12,7 @@ for device interfacing.
 
 ## Useful Links:
 
-A full introduction and description of the projet can be found here: [Intro](https://github.com/loganRidings/FailureAnalysis/blob/main/projectIntro.md) , [What We Did](https://github.com/loganRidings/FailureAnalysis/blob/main/Recap.md) 
+A full introduction and description of the projet can be found here: [Intro](https://github.com/loganRidings/FailureAnalysis/blob/main/projectIntro.md)
 
 A full parts list can be found here: [Parts List](https://github.com/loganRidings/FailureAnalysis/blob/main/partsList.md#parts-list)
   
