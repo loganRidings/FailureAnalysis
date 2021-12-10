@@ -27,7 +27,7 @@ The Arduino code is here:
   
 The python script to run on the Pi is here: [SerialPython](https://github.com/loganRidings/FailureAnalysis/blob/main/failingDraft.py)
 
-Some of the useful references we consulted while working on this project:
+
 
   
 
