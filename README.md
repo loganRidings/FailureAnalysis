@@ -19,7 +19,7 @@ The Arduino code is here:
   - [photoDiodeTwo](https://github.com/loganRidings/FailureAnalysis/blob/main/photoTwo.ino) Arduino 3 measures the current out of 1 of the photodiodes.
   
   
-The python script to run on the Pi is here:
+The python script to run on the Pi is here: [SerialPython](https://github.com/loganRidings/FailureAnalysis/blob/main/failingDraft.py)
 
 Some of the useful references we consulted while working on this project:
 
