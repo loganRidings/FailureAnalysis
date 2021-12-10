@@ -13,10 +13,10 @@ A full parts list can be found here: [Parts List](https://github.com/loganRiding
 The Arduino Circuit Diagram: [Diagram](https://github.com/loganRidings/FailureAnalysis/blob/main/FailureAnalysisPhotodiodes.png)
   
 The Arduino code is here:
-  - [driver]  (https://github.com/loganRidings/FailureAnalysis/blob/main/ArduinoLEDdriver.ino) Arduino 0 controls power and current for the LEDs.
-  - [current] (https://github.com/loganRidings/FailureAnalysis/blob/main/currentUnit.ino) Arduino 1 measures the current across the resitor and sends it to the pi via serial pins.
-  - [photoDiodeOne] (https://github.com/loganRidings/FailureAnalysis/blob/main/photoOne.ino) Arduino 2 measures the current out of 5 of the photodiodes.
-  - [photoDiodeTwo] (https://github.com/loganRidings/FailureAnalysis/blob/main/photoTwo.ino) Arduino 3 measures the current out of 1 of the photodiodes.
+  - [driver](https://github.com/loganRidings/FailureAnalysis/blob/main/ArduinoLEDdriver.ino) Arduino 0 controls power and current for the LEDs.
+  - [current](https://github.com/loganRidings/FailureAnalysis/blob/main/currentUnit.ino) Arduino 1 measures the current across the resitor and sends it to the pi via serial pins.
+  - [photoDiodeOne](https://github.com/loganRidings/FailureAnalysis/blob/main/photoOne.ino) Arduino 2 measures the current out of 5 of the photodiodes.
+  - [photoDiodeTwo](https://github.com/loganRidings/FailureAnalysis/blob/main/photoTwo.ino) Arduino 3 measures the current out of 1 of the photodiodes.
   
   
 The python script to run on the Pi is here:
