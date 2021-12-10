@@ -55,6 +55,8 @@
   Physical realization of the apparturs minus the raspberry pi. LEDs on the leftmost breadbord and Photodiodes on the rightmost breadboard.
   
   ## Future plans
+	
+	
 	The next stage of this project will be to find out if the communication error between the Arduino and the Raspberry Pi is a hardware error 
 	or a bug in the code. Taking a step back to run unit tests on various functions of the code and circuitry will help us to isolate the issue a
 	nd create an overall more robust design. We found that the analogue write command in the Arduino software does not allow the full +5V to be 
