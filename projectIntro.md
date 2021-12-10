@@ -57,12 +57,12 @@
   ## Future plans
 	
 	
-	The next stage of this project will be to find out if the communication error between the Arduino and the Raspberry Pi is a hardware error 
-	or a bug in the code. Taking a step back to run unit tests on various functions of the code and circuitry will help us to isolate the issue a
-	nd create an overall more robust design. We found that the analogue write command in the Arduino software does not allow the full +5V to be 
-	utilized on the digital out pins connected to the MOSFET gate. We will need to remedy this issue so that we can be sure that the threshold 
-	voltage is reached, and the maximum current is flowing through the device. Once we have established a connection between the devices and is
-	working as planned, we will need to isolate each LED and photodetector so that we can get an accurate measurement of the intensity of each LED. 
-	The data collected from each run will be analyzed using statistical methods in JMP to characterize and optimize the LED operating conditions. 
+  The next stage of this project will be to find out if the communication error between the Arduino and the Raspberry Pi is a hardware error 
+  or a bug in the code. Taking a step back to run unit tests on various functions of the code and circuitry will help us to isolate the issue 
+  and create an overall more robust design. We found that the analogue write command in the Arduino software does not allow the full +5V to be 
+  utilized on the digital out pins connected to the MOSFET gate. We will need to remedy this issue so that we can be sure that the threshold 
+  voltage is reached, and the maximum current is flowing through the device. Once we have established a connection between the devices and is
+  working as planned, we will need to isolate each LED and photodetector so that we can get an accurate measurement of the intensity of each LED. 
+  The data collected from each run will be analyzed using statistical methods in JMP to characterize and optimize the LED operating conditions. 
 
 
