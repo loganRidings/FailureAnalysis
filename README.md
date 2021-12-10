@@ -9,7 +9,7 @@ The goal of this project is to build an automated LED stress testing experiement
 A full introduction and description of the projet can be found <here>
   kjsbfjsd.ytasyv
 
-A full parts list can be found here:
+A full parts list can be found here: [Parts List](https://github.com/loganRidings/FailureAnalysis/blob/main/partsList.md#parts-list)
   
 The Arduino code to do xyz is here:
   
