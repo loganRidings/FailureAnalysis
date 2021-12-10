@@ -73,7 +73,7 @@ def main(filename="/home/pi/test/test.csv"):
                     # if this is the first of 31, thats the column
                     if cnt == 0:
                         column = line
-                        index = str(N)+column
+                        index = str(i)+column
                     else:
                         DATADICT[index].append(line)
 
