@@ -33,3 +33,34 @@
   Example circuit from experimental setup. Each digital output pulsed the LEDs at a different frequency (max 490 Hz). 
   The current was measured by the analogue input of the measurement Arduino. Resistors were used to control the amount of current 
   through each of the LEDs. 
+  
+  
+  ## Our Project Experience Recap
+
+
+  Using breadboards, we connected the circuits diagrammed in Figure 1. When testing the Arduino code, we found that not all the LEDs were powered. 
+  Furthermore, the LEDs were flickering due insufficient voltage supply. Since the Keithley was being run at maximum output, we had to switch 
+  to a GW Instek power supply, which can   provide 30 V and up to 3 amps of current. It is possible that the Keithley had trouble keeping a consistent 
+  voltage supply with the duty cycle of the Arduino pins, we hoped that since the GW Instek power supply was a simpler design, it would not try
+  to compensate for the frequency and provide a constant voltage.
+  
+  After assuring sufficient voltage supply with the new equipment, we connected the Raspberry Pi to test the code. 
+  Commands sent by the Raspberry Pi were reflected   back from the Arduinos. This could be due to an issue with the serial read 
+  on the Arduino, or because the four Arduinos ran in parallel on the same serial pins of the Pi. Due to time constraints, we 
+  were unable to resolve the issue. 
+  
+  ![image](https://user-images.githubusercontent.com/80741351/145652985-313adc01-06a4-4b22-9345-40bd489b2426.png)
+
+  #### Figure 2: 
+  Physical realization of the apparturs minus the raspberry pi. LEDs on the leftmost breadbord and Photodiodes on the rightmost breadboard.
+  
+  ## Future plans
+	The next stage of this project will be to find out if the communication error between the Arduino and the Raspberry Pi is a hardware error 
+	or a bug in the code. Taking a step back to run unit tests on various functions of the code and circuitry will help us to isolate the issue a
+	nd create an overall more robust design. We found that the analogue write command in the Arduino software does not allow the full +5V to be 
+	utilized on the digital out pins connected to the MOSFET gate. We will need to remedy this issue so that we can be sure that the threshold 
+	voltage is reached, and the maximum current is flowing through the device. Once we have established a connection between the devices and is
+	working as planned, we will need to isolate each LED and photodetector so that we can get an accurate measurement of the intensity of each LED. 
+	The data collected from each run will be analyzed using statistical methods in JMP to characterize and optimize the LED operating conditions. 
+
+
