@@ -66,8 +66,6 @@ The python script to run on the Pi is here: [SerialPython](https://github.com/lo
 
 
 
-We <3 Fuding 
-
 
 
 
